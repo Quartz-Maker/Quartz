@@ -2209,9 +2209,6 @@ body.is-grabbing webview {
 body:not(.is-grabbing):not(.is-fullscreen) .workspace-tabs.mod-top .workspace-tab-header-spacer {
   -webkit-app-region: drag;}
 
-body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspace-tab-header-container {
-  -webkit-app-region: drag;}
-
 .modal-container.is-being-dragged {
   pointer-events: none !important;}
 
