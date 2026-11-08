@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="#features">Features</a> •
+  <a href="#screenshots">Screenshots</a> •
   <a href="#plugins--themes">Plugins &amp; themes</a> •
   <a href="#installation">Installation</a> •
   <a href="#building-from-source">Building from source</a> •
@@ -24,6 +25,10 @@
 </p>
 
 ---
+
+<p align="center">
+  <img src="assets/screenshots/02-dark-backlinks.png" alt="Quartz in dark theme showing a note with its backlinks" width="900">
+</p>
 
 Quartz is a fully open-source replacement for Obsidian. It works on a folder of plain Markdown files on your own disk, with no account, no telemetry and no lock-in. You get the workflow you already know: wikilinks, backlinks, graph view, canvas, Bases, Live Preview and a command palette, all under the MIT license.
 
@@ -74,6 +79,23 @@ Daily notes · Templates · Note composer · Slash commands · Unique note creat
 - Your notes are ordinary `.md` files in a folder you control
 - Per-vault configuration lives in a hidden `.quartz/` folder
 - Multiple vaults, each in its own window, plus `quartz://` URIs for deep links
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/01-live-preview.png" alt="Live Preview editor with properties and a callout"><br><sub><b>Live Preview:</b> properties, callouts and links render as you type</sub></td>
+    <td width="50%"><img src="assets/screenshots/03-graph-view.png" alt="Graph view of a vault"><br><sub><b>Graph view:</b> see how your notes connect</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/04-canvas.png" alt="Canvas with text cards, embedded notes and arrows"><br><sub><b>Canvas:</b> lay out cards, notes and connections on an infinite board</sub></td>
+    <td width="50%"><img src="assets/screenshots/05-reading-mermaid.png" alt="Reading view with a Mermaid diagram"><br><sub><b>Reading view:</b> with Mermaid diagrams, math and code</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/06-command-palette.png" alt="Command palette searching for open commands"><br><sub><b>Command palette:</b> every action is a keystroke away</sub></td>
+    <td width="50%"><img src="assets/screenshots/02-dark-backlinks.png" alt="Dark theme with backlinks pane"><br><sub><b>Backlinks:</b> linked mentions, with light and dark themes</sub></td>
+  </tr>
+</table>
 
 ## Plugins & themes
 
