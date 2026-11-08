@@ -1,0 +1,192 @@
+/* Quartz theme — statusbar component styles.
+   Generated file. Do not edit by hand. */
+
+.status-bar {
+  display: flex;
+  position: var(--status-bar-position);
+  right: 0px;
+  bottom: 0px;
+  z-index: var(--layer-status-bar);
+  width: auto;
+  min-height: 18px;
+  padding-top: var(--size-4-1);
+  padding-bottom: var(--size-4-1);
+  padding-left: var(--size-4-1);
+  border-width: var(--status-bar-border-width);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: var(--status-bar-border-color);
+  border-right-color: var(--status-bar-border-color);
+  border-bottom-color: var(--status-bar-border-color);
+  border-left-color: var(--status-bar-border-color);
+  border-radius: var(--status-bar-radius);
+  color: var(--status-bar-text-color);
+  background-color: var(--status-bar-background);
+  font-size: var(--status-bar-font-size);
+  justify-content: flex-end;
+  gap: var(--size-4-1);
+  row-gap: var(--size-4-1);
+  column-gap: var(--size-4-1);
+  user-select: none;
+}
+
+.status-bar:not(.qz-x):not(qz-x) {
+  padding-right: var(--size-4-2);
+}
+
+.status-bar-item-icon {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+:where(.status-bar-item-icon):not(qz-x) {
+  float: none;
+}
+
+.status-bar-item-segment {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2-2);
+  row-gap: var(--size-2-2);
+  column-gap: var(--size-2-2);
+}
+
+:where(.status-bar-item-segment):not(qz-x) {
+  float: none;
+}
+
+.status-bar-item-segment:not(.qz-x) {
+  margin-right: 0px;
+}
+
+.plugin-word-count:where(.status-bar-item) {
+  display: flex;
+  padding-top: calc(var(--size-2-2) * 0.75);
+  padding-right: var(--size-2-2);
+  padding-bottom: calc(var(--size-2-2) * 0.75);
+  padding-left: var(--size-2-2);
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+  border-bottom-left-radius: var(--radius-s);
+  align-items: center;
+}
+
+:where(.plugin-word-count.status-bar-item):not(qz-x) {
+  float: none;
+}
+
+.plugin-sync:where(.status-bar-item) {
+  display: flex;
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+  border-bottom-left-radius: var(--radius-s);
+  align-items: center;
+}
+
+:where(.plugin-sync.status-bar-item):not(qz-x) {
+  float: none;
+}
+
+.plugin-sync.status-bar-item {
+  padding-top: 0px;
+  padding-right: var(--size-2-2);
+  padding-bottom: 0px;
+  padding-left: var(--size-2-2);
+}
+
+:where(.refresh-cw-off.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.refresh-cw-off:where(.svg-icon):not(qz-x) {
+  width: var(--icon-s);
+  height: var(--icon-s);
+  stroke-width: var(--icon-s-stroke-width);
+}
+
+.refresh-cw-off.svg-icon {
+  pointer-events: none;
+}
+
+.mod-clickable:where(.plugin-backlink.status-bar-item) {
+  display: flex;
+  padding-top: calc(var(--size-2-2) * 0.75);
+  padding-right: var(--size-2-2);
+  padding-bottom: calc(var(--size-2-2) * 0.75);
+  padding-left: var(--size-2-2);
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+  border-bottom-left-radius: var(--radius-s);
+  align-items: center;
+}
+
+:where(.mod-clickable.plugin-backlink.status-bar-item):not(qz-x) {
+  float: none;
+}
+
+.mod-clickable.plugin-backlink:where(.status-bar-item) {
+  cursor: var(--cursor);
+}
+
+:where(.mod-clickable.plugin-properties.status-bar-item):not(qz-x) {
+  float: none;
+}
+
+.mod-clickable:where(.plugin-properties.status-bar-item) {
+  padding-top: calc(var(--size-2-2) * 0.75);
+  padding-right: var(--size-2-2);
+  padding-bottom: calc(var(--size-2-2) * 0.75);
+  padding-left: var(--size-2-2);
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+  border-bottom-left-radius: var(--radius-s);
+  align-items: center;
+  display: flex;
+}
+
+.mod-clickable.plugin-properties:where(.status-bar-item) {
+  cursor: var(--cursor);
+}
+
+.mod-clickable:where(.plugin-editor-status.status-bar-item) {
+  display: flex;
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+  border-bottom-left-radius: var(--radius-s);
+  align-items: center;
+}
+
+:where(.mod-clickable.plugin-editor-status.status-bar-item):not(qz-x) {
+  float: none;
+}
+
+.mod-clickable.plugin-editor-status:where(.status-bar-item) {
+  padding-top: 0px;
+  padding-right: var(--size-2-2);
+  padding-bottom: 0px;
+  padding-left: var(--size-2-2);
+  cursor: var(--cursor);
+}
+
+.mod-error:where(.status-bar-item-icon.sync-status-icon) {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  cursor: var(--cursor);
+}
+
+:where(.mod-error.status-bar-item-icon.sync-status-icon):not(qz-x) {
+  float: none;
+}
+
+.mod-error.status-bar-item-icon:where(.sync-status-icon) {
+  color: var(--text-error);
+}

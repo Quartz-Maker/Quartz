@@ -1,0 +1,188 @@
+/* Quartz theme — titlebar component styles.
+   Generated file. Do not edit by hand. */
+
+.titlebar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.titlebar:not(.qz-x):not(.qz-x):not(.qz-x) {
+  z-index: var(--layer-popover);
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  pointer-events: none;
+}
+
+.titlebar:not(.qz-x):not(.qz-x):not(qz-x) {
+  height: calc(var(--header-height) * 0.975);
+}
+
+.titlebar-inner {
+  display: flex;
+  width: 100%;
+  color: var(--titlebar-text-color);
+  font-weight: var(--titlebar-text-weight);
+}
+
+:where(.titlebar-inner):not(qz-x) {
+  float: none;
+}
+
+.titlebar-text:not(.qz-x):not(.qz-x):not(.qz-x) {
+  display: none;
+}
+
+.titlebar-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  float: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  padding-right: 125px;
+  padding-bottom: 0px;
+  padding-left: 125px;
+  opacity: 0.85;
+  font-size: var(--font-ui-small);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--font-ui-small) * 0.15);
+  row-gap: calc(var(--font-ui-small) * 0.15);
+  column-gap: calc(var(--font-ui-small) * 0.15);
+}
+
+.logo-full:not(.qz-x):not(.qz-x):not(.qz-x) {
+  display: none;
+}
+
+:where(.logo-full):not(qz-x) {
+  float: none;
+}
+
+:where(.logo-wireframe):not(qz-x) {
+  float: none;
+}
+
+.mod-left:where(.titlebar-button-container) {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  float: none;
+}
+
+.mod-left.titlebar-button-container {
+  left: 0px;
+  height: 100%;
+}
+
+.mod-left.titlebar-button-container:not(.qz-x):not(.qz-x) {
+  pointer-events: auto;
+}
+
+.mod-logo.titlebar-button:not(.qz-x) {
+  display: none;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+}
+
+:where(.mod-logo.titlebar-button):not(qz-x) {
+  float: none;
+}
+
+.mod-logo.titlebar-button {
+  width: var(--ribbon-width);
+  justify-content: center;
+  align-items: center;
+}
+
+.mod-logo:where(.titlebar-button) {
+  cursor: var(--cursor);
+}
+
+.mod-right:where(.titlebar-button-container) {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  float: none;
+}
+
+.mod-right.titlebar-button-container {
+  right: 0px;
+  height: 100%;
+}
+
+.mod-right.titlebar-button-container:not(.qz-x):not(.qz-x) {
+  background-color: var(--titlebar-background);
+  pointer-events: auto;
+}
+
+.mod-minimize.titlebar-button {
+  display: flex;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  align-items: center;
+}
+
+:where(.mod-minimize.titlebar-button):not(qz-x) {
+  float: none;
+}
+
+.mod-minimize:where(.titlebar-button) {
+  cursor: var(--cursor);
+}
+
+.mod-maximize.titlebar-button {
+  display: flex;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  align-items: center;
+}
+
+:where(.mod-maximize.titlebar-button):not(qz-x) {
+  float: none;
+}
+
+.mod-maximize:where(.titlebar-button) {
+  cursor: var(--cursor);
+}
+
+.mod-close.titlebar-button {
+  display: flex;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  align-items: center;
+}
+
+:where(.mod-close.titlebar-button):not(qz-x) {
+  float: none;
+}
+
+.mod-close:where(.titlebar-button) {
+  cursor: var(--cursor);
+}

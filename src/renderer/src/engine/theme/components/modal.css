@@ -1,0 +1,170 @@
+/* Quartz theme — modal component styles.
+   Generated file. Do not edit by hand. */
+
+.modal-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  float: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-modifier-cover);
+}
+
+.modal {
+  display: flex;
+  width: var(--dialog-width);
+  min-height: 100px;
+  max-width: var(--dialog-max-width);
+  max-height: var(--dialog-max-height);
+  padding-top: var(--size-4-4);
+  padding-right: var(--size-4-4);
+  padding-bottom: var(--size-4-4);
+  padding-left: var(--size-4-4);
+  border-width: var(--modal-border-width);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: var(--modal-border-color);
+  border-right-color: var(--modal-border-color);
+  border-bottom-color: var(--modal-border-color);
+  border-left-color: var(--modal-border-color);
+  border-top-left-radius: var(--modal-radius);
+  border-top-right-radius: var(--modal-radius);
+  border-bottom-right-radius: var(--modal-radius);
+  border-bottom-left-radius: var(--modal-radius);
+  background-color: var(--modal-background);
+  overflow-x: auto;
+  overflow-y: auto;
+  flex-direction: column;
+  --checkbox-size: var(--font-ui-medium);
+}
+
+.modal:not(.qz-x) {
+  position: relative;
+}
+
+.modal:not(.qz-x):not(.qz-x) {
+  box-shadow: var(--shadow-l);
+}
+
+:where(.modal-header):not(qz-x) {
+  float: none;
+}
+
+.modal-header {
+  height: auto;
+}
+
+:where(.modal-title):not(qz-x) {
+  float: none;
+}
+
+.modal-title {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: var(--font-ui-medium);
+  font-weight: var(--font-semibold);
+  line-height: var(--line-height-tight);
+  text-align: start;
+}
+
+:where(.modal-content):not(qz-x) {
+  float: none;
+}
+
+.modal-content {
+  font-size: var(--font-ui-medium);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.modal-header:is(.mod-settings *) {
+  display: none;
+}
+
+.mod-dim:where(.modal-container) {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: var(--layer-modal);
+  float: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content.vertical-tabs-container:not(.qz-x) {
+  display: flex;
+  margin-top: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+:where(.modal-content.vertical-tabs-container):not(qz-x) {
+  float: none;
+}
+
+.modal-content:where(.vertical-tabs-container) {
+  font-size: var(--font-ui-medium);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.lucide-x:where(.svg-icon):where(.clickable-icon *):not(qz-x) {
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+}
+
+.clickable-icon:where(.mod-raised.modal-header-button) {
+  display: flex;
+  position: absolute;
+  top: var(--size-2-3);
+  z-index: var(--layer-modal);
+  float: none;
+  height: auto;
+  padding-top: var(--size-2-2);
+  padding-right: var(--size-2-2);
+  padding-bottom: var(--size-2-2);
+  padding-left: var(--size-2-2);
+  border-top-left-radius: var(--clickable-icon-radius);
+  border-top-right-radius: var(--clickable-icon-radius);
+  border-bottom-right-radius: var(--clickable-icon-radius);
+  border-bottom-left-radius: var(--clickable-icon-radius);
+  color: var(--icon-color);
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  cursor: var(--cursor);
+}
+
+.clickable-icon.mod-raised:where(.modal-header-button):not(qz-x) {
+  right: 12px;
+}
+
+.clickable-icon:where(.mod-raised.modal-setting-back-button) {
+  display: flex;
+  height: auto;
+  padding-top: var(--size-2-2);
+  padding-right: var(--size-2-3);
+  padding-bottom: var(--size-2-2);
+  padding-left: var(--size-2-3);
+  border-top-left-radius: var(--clickable-icon-radius);
+  border-top-right-radius: var(--clickable-icon-radius);
+  border-bottom-right-radius: var(--clickable-icon-radius);
+  border-bottom-left-radius: var(--clickable-icon-radius);
+  color: var(--icon-color);
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  cursor: var(--cursor);
+}
+
+:where(.clickable-icon.mod-raised.modal-setting-back-button):not(qz-x) {
+  float: none;
+}

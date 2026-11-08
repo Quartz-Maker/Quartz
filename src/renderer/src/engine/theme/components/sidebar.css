@@ -1,0 +1,231 @@
+/* Quartz theme — sidebar component styles.
+   Generated file. Do not edit by hand. */
+
+.clickable-icon {
+  display: flex;
+  height: auto;
+  padding-top: var(--size-2-2);
+  padding-right: var(--size-2-3);
+  padding-bottom: var(--size-2-2);
+  padding-left: var(--size-2-3);
+  border-top-left-radius: var(--clickable-icon-radius);
+  border-top-right-radius: var(--clickable-icon-radius);
+  border-bottom-right-radius: var(--clickable-icon-radius);
+  border-bottom-left-radius: var(--clickable-icon-radius);
+  color: var(--text-muted);
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  cursor: var(--cursor);
+}
+
+:where(.clickable-icon):not(qz-x) {
+  float: none;
+}
+
+.side-dock-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--size-2-3);
+  row-gap: var(--size-2-3);
+  column-gap: var(--size-2-3);
+}
+
+:where(.side-dock-actions):not(qz-x) {
+  float: none;
+}
+
+.side-dock-settings {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--size-2-3);
+  row-gap: var(--size-2-3);
+  column-gap: var(--size-2-3);
+}
+
+:where(.side-dock-settings):not(qz-x) {
+  float: none;
+}
+
+.workspace-sidedock-vault-profile:not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  display: var(--vault-profile-display);
+  height: auto;
+  padding-top: var(--size-4-2);
+  padding-right: var(--size-4-2);
+  padding-bottom: var(--size-4-2);
+  padding-left: var(--size-4-2);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--divider-color);
+  background-color: var(--background-secondary);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-4-1);
+  row-gap: var(--size-4-1);
+  column-gap: var(--size-4-1);
+  order: 1;
+}
+
+:where(.workspace-sidedock-vault-profile):not(qz-x) {
+  float: none;
+}
+
+.workspace-sidedock-vault-profile:not(.qz-x) {
+  width: 100%;
+}
+
+:where(.workspace-sidedock-empty-state):not(qz-x) {
+  float: none;
+}
+
+.workspace-sidedock-empty-state:not(.qz-x) {
+  width: 100%;
+  height: 0px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0px;
+}
+
+.workspace-sidedock-empty-state {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-size: var(--font-ui-small);
+}
+
+:where(.u-muted):not(qz-x) {
+  float: none;
+}
+
+.u-muted {
+  color: var(--text-muted);
+}
+
+.clickable-icon:is(.metadata-property-value *) {
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+.clickable-icon:is(.workspace-tab-header-container *) {
+  padding-top: var(--size-2-2);
+  padding-right: var(--size-2-2);
+  padding-bottom: var(--size-2-2);
+  padding-left: var(--size-2-2);
+  color: var(--icon-color);
+  align-items: center;
+}
+
+.clickable-icon:hover {
+  color: var(--text-muted);
+  background-color: var(--background-modifier-hover);
+  box-shadow: none;
+}
+
+.clickable-icon:where(.mod-horizontal *) {
+  color: var(--icon-color);
+}
+
+.clickable-icon:where(.workspace-tab-header-container *):where(.mod-right *) {
+  padding-top: var(--size-2-2);
+  padding-right: var(--size-2-3);
+  padding-bottom: var(--size-2-2);
+  padding-left: var(--size-2-3);
+  color: var(--icon-color);
+  align-items: center;
+}
+
+.clickable-icon:hover:where(.workspace-tab-header-container *) {
+  color: var(--icon-color-hover);
+}
+
+:where(.sidebar-toggle-button-icon.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.sidebar-toggle-button-icon:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.sidebar-toggle-button-icon.svg-icon {
+  pointer-events: none;
+}
+
+.sidebar-toggle-button-icon.svg-icon:where(.clickable-icon:hover *):not(qz-x) {
+  opacity: 1;
+}
+
+.mod-left:where(.mod-primary.sidebar-toggle-button) {
+  display: flex;
+  height: calc(var(--header-height) * 0.975);
+  padding-top: var(--size-4-2);
+  padding-right: 0px;
+  padding-bottom: calc(var(--size-4-2) * 0.875);
+  padding-left: 0px;
+}
+
+.mod-left.mod-primary:where(.sidebar-toggle-button) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  float: none;
+  width: var(--ribbon-width);
+  justify-content: center;
+}
+
+.mod-right:where(.mod-secondary.sidebar-toggle-button) {
+  display: flex;
+  position: relative;
+  height: calc(var(--header-height) * 0.975);
+  padding-top: var(--size-4-2);
+  padding-bottom: calc(var(--size-4-2) * 0.875);
+  padding-left: 0px;
+  justify-content: center;
+}
+
+.mod-right.mod-secondary:where(.sidebar-toggle-button) {
+  padding-right: var(--size-4-2);
+}
+
+.mod-horizontal:where(.mod-left-split.mod-primary-split.mod-sidedock.workspace-split) {
+  display: flex;
+  position: relative;
+  background-color: var(--tab-container-background);
+  --bases-table-header-background: var(--background-secondary);
+}
+
+.mod-horizontal.mod-left-split:where(.mod-primary-split.mod-sidedock.workspace-split) {
+  height: 100%;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.mod-horizontal:where(.mod-right-split.mod-secondary-split.mod-sidedock.workspace-split) {
+  display: flex;
+  position: relative;
+  background-color: var(--tab-container-background);
+  --bases-table-header-background: var(--background-secondary);
+}
+
+.mod-horizontal.mod-right-split:where(.mod-secondary-split.mod-sidedock.workspace-split) {
+  height: 100%;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}

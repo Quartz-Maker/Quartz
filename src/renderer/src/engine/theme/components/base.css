@@ -1,0 +1,34 @@
+/* Quartz theme — base component styles.
+   Generated file. Do not edit by hand. */
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  float: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-medium);
+  line-height: var(--line-height-tight);
+  overflow-x: clip;
+  overflow-y: clip;
+  user-select: none;
+  caret-color: var(--text-normal);
+  contain: strict;
+}

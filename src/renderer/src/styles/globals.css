@@ -1,0 +1,126 @@
+/* Layout + resets for the remaining React shell. Colours/fonts come from the theme
+   variable contract (engine/theme/*); old --bg-* names are aliased in theme/legacy.css.
+   Resets are scoped away from workspace-DOM surfaces, which get their styles from the theme. */
+*:where(:not(.markdown-rendered, .markdown-rendered *, .markdown-source-view, .markdown-source-view *, .modal-container *, .menu, .menu *, .notice-container *, .prompt *, .suggestion-container *, .titlebar, .titlebar *, .metadata-container *, .workspace-leaf *)) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#root {
+  font-family: var(--font-interface);
+  font-size: var(--font-size);
+  color: var(--text-normal);
+  background: var(--background-primary);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.app-main > .workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Scrollbars: `styled-scrollbars` (12px track; the thumb is inset by a transparent border, so it is
+   drawn thinner, with a lighter colour on hover/drag). */
+body.styled-scrollbars ::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-height);
+  border-radius: var(--scrollbar-radius);
+  background-color: transparent;
+}
+body.styled-scrollbars ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body.styled-scrollbars ::-webkit-scrollbar-thumb {
+  min-height: 45px;
+  border: 2px solid transparent;
+  border-width: var(--scrollbar-border-width);
+  border-radius: var(--scrollbar-radius);
+  background-color: var(--scrollbar-thumb-bg);
+  background-clip: padding-box;
+}
+body.styled-scrollbars ::-webkit-scrollbar-thumb:hover,
+body.styled-scrollbars ::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-active-thumb-bg);
+}
+body.styled-scrollbars ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+body:not(.styled-scrollbars) {
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+}
+
+/* Button resets */
+button:where(:not(.markdown-rendered, .markdown-rendered *, .markdown-source-view, .markdown-source-view *, .modal-container *, .menu, .menu *, .notice-container *, .prompt *, .suggestion-container *, .titlebar, .titlebar *, .metadata-container *, .workspace-leaf *)) {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius);
+}
+button:where(:not(.markdown-rendered, .markdown-rendered *, .markdown-source-view, .markdown-source-view *, .modal-container *, .menu, .menu *, .notice-container *, .prompt *, .suggestion-container *, .titlebar, .titlebar *, .metadata-container *, .workspace-leaf *)):hover {
+  background: var(--bg-hover);
+}
+
+/* Input resets */
+input:where(:not(.markdown-rendered, .markdown-rendered *, .markdown-source-view, .markdown-source-view *, .modal-container *, .menu, .menu *, .notice-container *, .prompt *, .suggestion-container *, .titlebar, .titlebar *, .metadata-container *, .workspace-leaf *)) {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-normal);
+  font: inherit;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  outline: none;
+}
+input:where(:not(.markdown-rendered, .markdown-rendered *, .markdown-source-view, .markdown-source-view *, .modal-container *, .menu, .menu *, .notice-container *, .prompt *, .suggestion-container *, .titlebar, .titlebar *, .metadata-container *, .workspace-leaf *)):focus {
+  border-color: var(--text-accent);
+}
+
+/* CodeMirror autocomplete tooltip */
+.cm-tooltip {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+  overflow: hidden;
+}
+.cm-tooltip-autocomplete > ul {
+  font-family: var(--font-text);
+  font-size: 13px;
+}
+.cm-tooltip-autocomplete > ul > li {
+  padding: 4px 10px;
+  color: var(--text-normal);
+}
+.cm-tooltip-autocomplete > ul > li[aria-selected] {
+  background: var(--bg-hover);
+  color: var(--text-normal);
+}
+.cm-completionLabel {
+  color: var(--text-normal);
+}
+.cm-completionDetail {
+  color: var(--text-faint);
+  font-size: 11px;
+  margin-left: 8px;
+}

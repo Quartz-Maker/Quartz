@@ -1,0 +1,217 @@
+/* Quartz theme: starter window (vault chooser). */
+
+.starter-screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-primary);
+}
+
+.starter-screen > .starter-screen-inner {
+  display: flex;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+.recent-vaults {
+  flex-shrink: 0;
+  width: 280px;
+  height: 100%;
+  padding: var(--size-4-8) 0 0;
+  border-right: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+  overflow-y: hidden;
+}
+
+.recent-vaults-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--size-4-2);
+  overflow-y: auto;
+}
+
+/* Empty space under the list still drags the window. */
+.recent-vaults-list::after {
+  display: block;
+  flex-grow: 1;
+  width: 100%;
+  height: 100px;
+  content: ' ';
+  -webkit-app-region: drag;
+}
+
+.recent-vaults-list-item {
+  position: relative;
+  margin-bottom: var(--size-4-1);
+  padding: var(--size-4-2) var(--size-4-6) var(--size-4-2) var(--size-4-3);
+  border-radius: var(--radius-s);
+  cursor: var(--cursor);
+  -webkit-app-region: no-drag;
+}
+
+.recent-vaults-list-item:hover,
+.recent-vaults-list-item.has-active-menu {
+  background-color: var(--background-modifier-hover);
+}
+
+.recent-vaults-list-item-name,
+.recent-vaults-list-item-path {
+  word-break: break-all;
+}
+
+.recent-vaults-list-item-name {
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.recent-vaults-list-item-name[contenteditable] {
+  padding: 0 var(--size-4-1);
+  border-color: var(--interactive-accent);
+  background-color: var(--background-modifier-hover);
+  font-size: 0.9em;
+  cursor: text;
+}
+
+.recent-vaults-list-item-path {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  line-height: 16px;
+}
+
+.recent-vaults-list-item-option-button {
+  position: absolute;
+  top: var(--size-4-3);
+  right: var(--size-4-1);
+  width: 30px;
+  height: 30px;
+  color: var(--text-faint);
+  line-height: 36px;
+  text-align: center;
+}
+
+.recent-vaults-list-item-option-button:hover {
+  color: var(--text-normal);
+}
+
+/* Language row: help icon on the left, full-width select. */
+.setting-item.mod-change-language {
+  -webkit-app-region: no-drag;
+}
+
+.setting-item.mod-change-language .setting-item-info {
+  flex-grow: 0;
+}
+
+.setting-item.mod-change-language .setting-item-control {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.setting-item.mod-change-language select {
+  width: 100%;
+  max-width: 100%;
+}
+
+.setting-item.mod-change-language .setting-item-name {
+  position: relative;
+  top: 3px;
+  color: var(--text-faint);
+  cursor: var(--cursor);
+}
+
+.setting-item.mod-change-language .setting-item-name:hover {
+  color: var(--text-muted);
+}
+
+.starter-screen-inner > .splash {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding-top: 36px;
+  background-color: var(--background-primary);
+  text-align: center;
+}
+
+.splash > .splash-brand {
+  flex-shrink: 0;
+  padding: 20px 0;
+}
+
+.splash-brand-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.splash-brand-logo > svg {
+  width: 90px;
+  height: 90px;
+}
+
+.splash-brand > .splash-brand-logo-text {
+  margin-top: 20px;
+  color: var(--text-normal);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 40px;
+}
+
+.splash-brand > .splash-brand-version {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  line-height: var(--line-height-tight);
+}
+
+.splash > .open-vault-options-container {
+  position: relative;
+  flex: 1 0 0;
+  width: 100%;
+  max-width: 540px;
+  overflow: auto;
+}
+
+.open-vault-options-container > .open-vault-options.mod-open-vault {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 36px;
+}
+
+.open-vault-options > .quick-start-container {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.quick-start-container > button.mod-cta:not(.qz-x):not(.qz-x):not(.qz-x) {
+  display: inline-flex;
+  padding: 8px 60px;
+  border-radius: var(--button-radius);
+  line-height: normal;
+}
+
+.open-vault-options > .setting-group {
+  margin: 0;
+}
+
+.splash-brand > .splash-brand-logo {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
+}
+
+.splash-brand > .splash-brand-logo-text {
+  width: 128px;
+  height: 26px;
+  margin: 20px auto 0;
+  font-size: 28px;
+  line-height: 26px;
+}
+
+.open-vault-options > .setting-group:not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x) {
+  margin: 0;
+}

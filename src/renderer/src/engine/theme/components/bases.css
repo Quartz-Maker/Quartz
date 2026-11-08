@@ -1,0 +1,337 @@
+/* Quartz theme: .view-content:has(> .bases-header), .bases-header, .bases-view (values are computed styles, colours mapped to theme variables). */
+
+.view-content > .bases-header:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--background-secondary-alt);
+  min-height: 40px;
+}
+
+.bases-header > .bases-toolbar:not(.qz-x):not(.qz-x) {
+  display: flex;
+  position: relative;
+  align-items: center;
+  column-gap: 4px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-views-menu:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-toolbar-item > .text-icon-button:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: center;
+  row-gap: 4px;
+  column-gap: 4px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 13px;
+  line-height: 16.9px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  cursor: default;
+  min-width: auto;
+  min-height: auto;
+  color: var(--text-muted);
+}
+
+.text-icon-button > .text-button-icon:not(.qz-x):not(.qz-x) {
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-icon-button > .text-button-label:not(.qz-x):not(.qz-x) {
+  display: block;
+  min-width: auto;
+  min-height: auto;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+.text-icon-button > .text-button-icon.mod-aux:not(.qz-x):not(.qz-x) {
+  color: var(--text-muted);
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-chevrons-up-down:not(.qz-x):not(.qz-x) {
+  stroke: var(--text-muted);
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-results-menu.bases-toolbar-result-count:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: 356.672px;
+  margin-left: -2px;
+  color: var(--text-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-sort-menu:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-arrow-up-down:not(.qz-x):not(.qz-x) {
+  stroke: var(--text-muted);
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-group-menu:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-stretch-horizontal:not(.qz-x):not(.qz-x) {
+  stroke: var(--text-muted);
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-filter-menu:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-list-filter:not(.qz-x):not(.qz-x) {
+  stroke: var(--text-muted);
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-properties-menu:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-list:not(.qz-x):not(.qz-x) {
+  stroke: var(--text-muted);
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-search:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-search:not(.qz-x):not(.qz-x) {
+  opacity: 1;
+  stroke: var(--text-muted);
+}
+
+.bases-toolbar > .bases-toolbar-item.bases-toolbar-new-item-menu:not(.qz-x):not(.qz-x) {
+  display: flex;
+  margin-right: -2px;
+  margin-left: -2px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.text-button-icon > svg.svg-icon.lucide-plus:not(.qz-x):not(.qz-x) {
+  opacity: 1;
+  stroke: var(--text-muted);
+}
+
+.view-content > .bases-view:not(.qz-x):not(.qz-x) {
+  position: relative;
+  flex-grow: 1;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.bases-view > .bases-thead:not(.qz-x):not(.qz-x) {
+  position: sticky;
+  z-index: 5;
+  justify-content: space-between;
+  background-color: var(--background-primary);
+  box-shadow: rgb(51, 51, 51) 0px -1px 0px 0px inset;
+}
+
+.bases-thead > .bases-tr:not(.qz-x):not(.qz-x) {
+  display: flex;
+  position: absolute;
+  box-shadow: rgb(51, 51, 51) 0px -1px 0px 0px;
+  min-width: 100%;
+}
+
+.bases-tr > .bases-td.mod-implicit:not(.qz-x):not(.qz-x) {
+  display: flex;
+  position: absolute;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: rgb(51, 51, 51) -1px 0px 0px 0px;
+}
+
+.bases-td > .bases-table-header:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: center;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-table-header > .bases-table-header-label:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: stretch;
+  row-gap: 4px;
+  column-gap: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: var(--text-muted);
+  font-size: 13.125px;
+  line-height: 17.0625px;
+  cursor: default;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-table-header-label > .bases-table-header-icon:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: center;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-table-header-icon > svg.svg-icon.lucide-info:not(.qz-x):not(.qz-x) {
+  display: block;
+  min-width: auto;
+  min-height: auto;
+  stroke: var(--text-muted);
+}
+
+.bases-table-header-label > .bases-table-header-name:not(.qz-x):not(.qz-x) {
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-td > .bases-table-header-sort:not(.qz-x):not(.qz-x) {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  padding-top: 2px;
+  padding-right: 6px;
+  color: var(--text-muted);
+}
+
+.bases-td > .bases-table-header-resizer:not(.qz-x):not(.qz-x) {
+  position: absolute;
+  z-index: 5;
+  cursor: col-resize;
+}
+
+.bases-view > .bases-table-container:not(.qz-x):not(.qz-x) {
+  position: relative;
+  background-color: var(--background-primary-alt);
+  min-width: 100%;
+}
+
+.bases-table-container > .bases-table:not(.qz-x):not(.qz-x) {
+  position: absolute;
+  flex-grow: 1;
+  flex-basis: 0%;
+  min-width: 100%;
+}
+
+.bases-table > .bases-tbody:not(.qz-x):not(.qz-x) {
+  position: relative;
+  background-color: var(--background-primary);
+  box-shadow: rgb(51, 51, 51) 0px 1px 0px 0px;
+}
+
+.bases-tbody > .bases-tr:not(.qz-x):not(.qz-x) {
+  display: flex;
+  position: absolute;
+  box-shadow: rgb(51, 51, 51) 0px -1px 0px 0px;
+  min-width: 100%;
+}
+
+.bases-tr > .bases-td:not(.qz-x):not(.qz-x) {
+  display: flex;
+  position: absolute;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: rgb(51, 51, 51) -1px 0px 0px 0px;
+}
+
+.bases-td > .bases-table-cell.bases-rendered-value.markdown-rendered:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  font-size: 13.125px;
+  line-height: 17.0625px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-table-cell > .internal-link:not(.qz-x):not(.qz-x) {
+  display: block;
+  min-width: auto;
+  min-height: auto;
+}
+
+.bases-td > .bases-table-cell.bases-rendered-value:not(.qz-x):not(.qz-x) {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  font-size: 13.125px;
+  line-height: 17.0625px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-width: auto;
+  min-height: auto;
+}

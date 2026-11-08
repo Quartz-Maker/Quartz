@@ -1,0 +1,9 @@
+/* Quartz-only shell bits (boot error, React bridge, empty-state extras). All workspace-DOM
+   styling comes from engine/theme (canonical stylesheet). */
+.view-header-breadcrumb-separator { padding: 0 4px; }
+.empty-state-container { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.empty-state-action-list { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.empty-state-hotkey { color: var(--text-faint); }
+.quartz-react-bridge { display: flex; flex-direction: column; }
+.quartz-react-bridge > * { flex: 1 1 auto; min-height: 0; }
+.quartz-boot-error { padding: 24px; color: var(--text-error, #e5484d); }

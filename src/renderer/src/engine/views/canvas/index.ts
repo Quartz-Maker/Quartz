@@ -1,0 +1,11 @@
+// Canvas (`canvas` view, `.canvas` files): public entry.
+export * from './json'
+export * from './geometry'
+export { Canvas, CanvasHistory, setCanvasFrameScheduler, canvasShellHooks, isUrl, isYouTubeUrl, embedUrlFor } from './Canvas'
+export type { CanvasOptions, CanvasHost } from './Canvas'
+export { CanvasNode, TextNode, FileNode, LinkNode, GroupNode, DummyNode } from './CanvasNode'
+export { CanvasEdge, EdgeLabel } from './CanvasEdge'
+export { CanvasView, VIEW_TYPE_CANVAS } from './CanvasView'
+export { CanvasPlugin, canvasCorePlugin, registerCanvasView, getCanvasPlugin, DEFAULT_CANVAS_OPTIONS } from './plugin'
+export { renderCanvasMinimap, CanvasEmbed } from './embed'
+export { applyCanvasColor, parseColor } from './color'

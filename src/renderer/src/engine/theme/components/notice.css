@@ -1,0 +1,54 @@
+/* Quartz theme — notice component styles.
+   Generated file. Do not edit by hand. */
+
+.notice-container {
+  position: fixed;
+  top: 22px;
+  right: 0px;
+  z-index: var(--layer-notice);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  pointer-events: none;
+}
+
+.notice {
+  display: flex;
+  max-width: var(--notice-max-width);
+  margin-bottom: 14px;
+  padding: var(--notice-padding);
+  border: var(--notice-color);
+  border-right: var(--notice-color);
+  border-bottom: var(--notice-color);
+  border-left: var(--notice-color);
+  border-top-left-radius: var(--notice-radius);
+  border-top-right-radius: var(--notice-radius);
+  border-bottom-right-radius: var(--notice-radius);
+  border-bottom-left-radius: var(--notice-radius);
+  color: var(--notice-color);
+  background-color: var(--notice-background);
+  font-size: var(--notice-font-size);
+  font-weight: 400;
+  font-variant: tabular-nums;
+  line-height: var(--line-height-tight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  flex-direction: column;
+  gap: var(--size-4-2);
+  row-gap: var(--size-4-2);
+  column-gap: var(--size-4-2);
+  cursor: var(--cursor);
+  pointer-events: auto;
+}
+
+:where(.notice):not(qz-x) {
+  float: none;
+}
+
+:where(.notice-message):not(qz-x) {
+  float: none;
+}

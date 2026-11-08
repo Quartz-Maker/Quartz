@@ -1,0 +1,31 @@
+node_modules/
+out/
+dist/
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Electron builder
+release/
+build/
+
+# Environment
+.env
+.env.local
+
+# Vault config folders
+.quartz/
+**/.quartz/
+
+# Local tooling
+.claude/
+.verify-comments.mjs
+.grp*.txt

@@ -1,0 +1,503 @@
+/* Quartz theme — nav component styles.
+   Generated file. Do not edit by hand. */
+
+div {
+  float: none;
+}
+
+:where(.nav-header):not(qz-x) {
+  float: none;
+}
+
+.nav-header {
+  padding-top: var(--size-4-2);
+  padding-right: var(--size-4-2);
+  padding-bottom: var(--size-4-2);
+  padding-left: var(--size-4-2);
+}
+
+.nav-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--size-2-1);
+  row-gap: var(--size-2-1);
+  column-gap: var(--size-2-1);
+}
+
+:where(.nav-buttons-container):not(qz-x) {
+  float: none;
+}
+
+.nav-files-container {
+  padding-top: var(--size-4-1);
+  padding-right: var(--size-4-3);
+  padding-bottom: var(--size-4-6);
+  padding-left: var(--size-4-3);
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+:where(.nav-files-container) {
+  outline-color: rgb(255, 255, 255) !important;
+}
+
+:where(.nav-file-tag):not(qz-x) {
+  float: none;
+}
+
+.nav-file-tag {
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: var(--size-4-1);
+  padding-bottom: 0px;
+  padding-left: var(--size-4-1);
+  border-top-left-radius: var(--nav-tag-radius);
+  border-top-right-radius: var(--nav-tag-radius);
+  border-bottom-right-radius: var(--nav-tag-radius);
+  border-bottom-left-radius: var(--nav-tag-radius);
+  color: var(--nav-tag-color);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 9px;
+  font-weight: var(--nav-tag-weight);
+  line-height: var(--line-height-normal);
+  letter-spacing: 0.45px;
+  align-self: center;
+}
+
+:where(.nav-file-tag) {
+  text-transform: uppercase !important;
+}
+
+:where(.tree-item-inner):not(qz-x) {
+  float: none;
+}
+
+.tree-item-inner {
+  white-space: pre-wrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.tree-item-flair-outer {
+  display: flex;
+  margin-left: auto;
+  padding-left: var(--size-4-1);
+  flex-shrink: 0;
+  align-items: center;
+}
+
+:where(.tree-item-flair-outer):not(qz-x) {
+  float: none;
+}
+
+:where(.tree-item-flair):not(qz-x) {
+  float: none;
+}
+
+.tree-item-flair {
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+  border-bottom-left-radius: var(--radius-s);
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  line-height: var(--font-ui-smaller);
+}
+
+:where(.tree-item):not(qz-x) {
+  float: none;
+}
+
+.tree-item-self {
+  display: flex;
+  position: relative;
+  margin-bottom: var(--nav-item-margin-bottom);
+  padding: var(--nav-item-padding);
+  border-top-left-radius: var(--nav-item-radius);
+  border-top-right-radius: var(--nav-item-radius);
+  border-bottom-right-radius: var(--nav-item-radius);
+  border-bottom-left-radius: var(--nav-item-radius);
+  color: var(--nav-item-color);
+  font-size: var(--nav-item-size);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  align-items: baseline;
+}
+
+.tree-item-self:not(.qz-x) {
+  cursor: var(--cursor);
+}
+
+:where(.tree-item-self):not(qz-x)::before {
+  float: none;
+}
+
+.tree-item-self::before {
+  content: "​";
+}
+
+:where(.tree-item-children):not(qz-x) {
+  float: none;
+}
+
+.tree-item-children {
+  margin-left: var(--nav-item-children-margin-start);
+  padding-left: var(--nav-item-children-padding-start);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--nav-indentation-guide-color);
+}
+
+.tree-item-flair:is(.is-clickable.search-result-file-title.tree-item-self:hover *):not(.qz-x) {
+  color: var(--text-muted);
+}
+
+.tree-item-self.is-active {
+  color: var(--text-normal);
+  background-color: var(--nav-item-background-active);
+  font-weight: 400;
+}
+
+.clickable-icon:where(.nav-action-button) {
+  display: flex;
+  height: auto;
+  padding-top: var(--size-2-2);
+  padding-right: var(--size-2-3);
+  padding-bottom: var(--size-2-2);
+  padding-left: var(--size-2-3);
+  border-top-left-radius: var(--clickable-icon-radius);
+  border-top-right-radius: var(--clickable-icon-radius);
+  border-bottom-right-radius: var(--clickable-icon-radius);
+  border-bottom-left-radius: var(--clickable-icon-radius);
+  color: var(--icon-color);
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  cursor: var(--cursor);
+}
+
+:where(.clickable-icon.nav-action-button):not(qz-x) {
+  float: none;
+}
+
+:where(.lucide-edit.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-edit:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.lucide-edit.svg-icon {
+  pointer-events: none;
+}
+
+:where(.lucide-folder-plus.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-folder-plus:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.lucide-folder-plus.svg-icon {
+  pointer-events: none;
+}
+
+:where(.lucide-sort-asc.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-sort-asc:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.lucide-sort-asc.svg-icon {
+  pointer-events: none;
+}
+
+:where(.lucide-gallery-vertical.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-gallery-vertical:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.lucide-gallery-vertical.svg-icon {
+  pointer-events: none;
+}
+
+:where(.lucide-chevrons-down-up.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-chevrons-down-up:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.lucide-chevrons-down-up.svg-icon {
+  pointer-events: none;
+}
+
+.lucide-search:where(.svg-icon):not(qz-x) {
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+}
+
+:where(.nav-folder.tree-item):not(qz-x) {
+  float: none;
+}
+
+.collapse-icon.tree-item-icon {
+  display: flex;
+  position: absolute;
+  float: none;
+  width: var(--size-4-4);
+  margin-left: calc(var(--size-4-5) * -1);
+  color: var(--text-muted);
+  opacity: var(--icon-opacity);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+:where(.collapse-icon.tree-item-icon):not(qz-x)::before {
+  float: none;
+}
+
+.collapse-icon.tree-item-icon::before {
+  content: "​";
+}
+
+:where(.right-triangle.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.right-triangle.svg-icon:not(qz-x) {
+  width: 10px;
+  height: 10px;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  stroke-width: 4px;
+}
+
+.right-triangle.svg-icon:not(.qz-x):not(qz-x) {
+  color: var(--collapse-icon-color);
+}
+
+.nav-folder-title-content:where(.tree-item-inner) {
+  display: block;
+  white-space: var(--nav-item-white-space);
+  overflow-wrap: anywhere;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+:where(.nav-folder-title-content.tree-item-inner):not(qz-x) {
+  float: none;
+}
+
+.nav-folder-title-content.tree-item-inner {
+  text-overflow: ellipsis;
+}
+
+:where(.nav-folder-children.tree-item-children):not(qz-x) {
+  float: none;
+}
+
+.nav-folder-children:where(.tree-item-children) {
+  margin-left: var(--nav-item-children-margin-start);
+  padding-left: var(--nav-item-children-padding-start);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--nav-indentation-guide-color);
+}
+
+:where(.nav-file.tree-item):not(qz-x) {
+  float: none;
+}
+
+.nav-file-title-content:where(.tree-item-inner) {
+  display: block;
+  white-space: var(--nav-item-white-space);
+  overflow-wrap: anywhere;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+:where(.nav-file-title-content.tree-item-inner):not(qz-x) {
+  float: none;
+}
+
+.nav-file-title-content.tree-item-inner {
+  text-overflow: ellipsis;
+}
+
+.mod-collapsible:where(.tree-item-self) {
+  display: flex;
+  position: relative;
+  margin-bottom: var(--nav-item-margin-bottom);
+  border-top-left-radius: var(--nav-item-radius);
+  border-top-right-radius: var(--nav-item-radius);
+  border-bottom-right-radius: var(--nav-item-radius);
+  border-bottom-left-radius: var(--nav-item-radius);
+  color: var(--nav-item-color);
+  font-size: var(--nav-item-size);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  align-items: baseline;
+}
+
+.mod-collapsible.tree-item-self {
+  padding: var(--nav-item-parent-padding);
+  cursor: var(--cursor);
+}
+
+:where(.mod-collapsible.tree-item-self):not(qz-x)::before {
+  float: none;
+}
+
+.mod-collapsible:where(.tree-item-self)::before {
+  content: "​";
+}
+
+.clickable-icon.nav-action-button:where(:hover) {
+  color: var(--icon-color-hover);
+  background-color: var(--background-modifier-hover);
+  box-shadow: none;
+}
+
+.lucide-edit.svg-icon:where(.clickable-icon.nav-action-button:hover *):not(qz-x) {
+  opacity: 1;
+}
+
+.collapse-icon.tree-item-icon:where(.is-clickable.mod-collapsible.nav-folder-title.tree-item-self:hover *) {
+  color: var(--icon-color);
+}
+
+.collapse-icon.tree-item-icon:where(.is-active *) {
+  color: var(--icon-color);
+}
+
+.collapse-icon.tree-item-icon:where(.search-result-file-title *) {
+  color: var(--icon-color);
+}
+
+.right-triangle.svg-icon:is(.is-collapsed *):not(.qz-x):not(qz-x) {
+  color: var(--collapse-icon-color-collapsed);
+}
+
+.right-triangle.svg-icon:where(.tree-item-icon *):not(qz-x) {
+  color: var(--nav-collapse-icon-color);
+}
+
+.mod-collapsible.tree-item-self:where(.is-active) {
+  color: var(--text-normal);
+  background-color: var(--nav-item-background-active);
+  font-weight: 400;
+}
+
+.mod-collapsible:where(.nav-folder-title.tree-item-self) {
+  display: flex;
+  position: relative;
+  margin-bottom: var(--nav-item-margin-bottom);
+  border-top-left-radius: var(--nav-item-radius);
+  border-top-right-radius: var(--nav-item-radius);
+  border-bottom-right-radius: var(--nav-item-radius);
+  border-bottom-left-radius: var(--nav-item-radius);
+  color: var(--nav-item-color);
+  font-size: var(--nav-item-size);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  align-items: baseline;
+}
+
+.mod-collapsible.nav-folder-title:where(.tree-item-self) {
+  padding: var(--nav-item-parent-padding);
+  cursor: var(--cursor);
+}
+
+:where(.mod-collapsible.nav-folder-title.tree-item-self):not(qz-x)::before {
+  float: none;
+}
+
+.mod-collapsible:where(.nav-folder-title.tree-item-self)::before {
+  content: "​";
+}
+
+.nav-file-title:where(.tappable.tree-item-self) {
+  display: flex;
+  position: relative;
+  margin-bottom: var(--nav-item-margin-bottom);
+  padding: var(--nav-item-padding);
+  border-top-left-radius: var(--nav-item-radius);
+  border-top-right-radius: var(--nav-item-radius);
+  border-bottom-right-radius: var(--nav-item-radius);
+  border-bottom-left-radius: var(--nav-item-radius);
+  color: var(--nav-item-color);
+  font-size: var(--nav-item-size);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  align-items: baseline;
+}
+
+.nav-file-title.tappable:where(.tree-item-self) {
+  cursor: var(--cursor);
+}
+
+:where(.nav-file-title.tappable.tree-item-self):not(qz-x)::before {
+  float: none;
+}
+
+.nav-file-title:where(.tappable.tree-item-self)::before {
+  content: "​";
+}
+
+.mod-collapsible.nav-folder-title.tree-item-self:hover:not(qz-x) {
+  color: var(--text-normal);
+  font-weight: 400;
+  background-color: var(--nav-item-background-hover);
+}
+
+.nav-file-title.tappable.tree-item-self:hover:not(qz-x) {
+  color: var(--text-normal);
+  font-weight: 400;
+  background-color: var(--nav-item-background-hover);
+}
+
+.nav-file-title.tappable:where(.tree-item-self.is-active) {
+  color: var(--text-normal);
+  font-weight: 400;
+  background-color: var(--nav-item-background-active);
+}

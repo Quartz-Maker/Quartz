@@ -1,0 +1,360 @@
+/* Quartz theme — workspace component styles.
+   Generated file. Do not edit by hand. */
+
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app-container:not(.qz-x):not(qz-x) {
+  position: relative;
+}
+
+.horizontal-main-container {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0px;
+}
+
+:where(.horizontal-main-container):not(qz-x) {
+  float: none;
+}
+
+.workspace {
+  display: flex;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0px;
+  transition-property: padding-left;
+  transition-duration: 0.1s;
+}
+
+:where(.workspace):not(qz-x) {
+  float: none;
+}
+
+.workspace-drawer-vault-switcher:not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  display: flex;
+  padding-top: var(--size-4-1);
+  padding-right: var(--size-4-2);
+  padding-bottom: var(--size-4-1);
+  padding-left: var(--size-4-2);
+  border-top-left-radius: var(--vault-profile-radius);
+  border-top-right-radius: var(--vault-profile-radius);
+  border-bottom-right-radius: var(--vault-profile-radius);
+  border-bottom-left-radius: var(--vault-profile-radius);
+  color: var(--text-normal);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-grow: 1;
+  align-items: center;
+  gap: var(--size-4-2);
+  row-gap: var(--size-4-2);
+  column-gap: var(--size-4-2);
+}
+
+:where(.workspace-drawer-vault-switcher):not(qz-x) {
+  float: none;
+}
+
+.workspace-drawer-vault-switcher-icon:not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  display: flex;
+  color: var(--text-faint);
+  align-items: center;
+}
+
+:where(.workspace-drawer-vault-switcher-icon):not(qz-x) {
+  float: none;
+}
+
+:where(.workspace-drawer-vault-name):not(qz-x) {
+  float: none;
+}
+
+.workspace-drawer-vault-name:not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  font-size: var(--vault-profile-font-size);
+  font-weight: var(--vault-profile-font-weight);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.workspace-drawer-vault-actions:not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  display: var(--vault-profile-actions-display);
+  align-items: center;
+}
+
+:where(.workspace-drawer-vault-actions):not(qz-x) {
+  float: none;
+}
+
+.workspace-leaf {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0px;
+  isolation: isolate;
+}
+
+.workspace-leaf:not(.qz-x) {
+  height: 100%;
+  background-color: var(--background-secondary);
+}
+
+:where(.workspace-leaf) {
+  contain: strict !important;
+}
+
+.workspace-leaf-content:where([data-type="file-explorer"]) {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+.workspace-leaf-content:where([data-type="search"]) {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+.workspace-leaf-content:where([data-type="undefined"]) {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+:where(.workspace-leaf-content[data-type="undefined"]) {
+  outline-color: rgb(255, 255, 255) !important;
+}
+
+.workspace-leaf-content:where([data-type="markdown"]) {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+:where(.view-content):not(qz-x) {
+  float: none;
+}
+
+.view-content {
+  width: 100%;
+}
+
+.view-content:not(.qz-x):not(.qz-x) {
+  height: 100%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: var(--background-primary);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.workspace-leaf-content:where([data-type="outline"]) {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+.workspace-drawer-vault-switcher:hover:not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+
+.workspace-drawer-vault-switcher-icon:is(.workspace-drawer-vault-switcher:hover *):not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(.qz-x):not(qz-x) {
+  color: var(--text-muted);
+}
+
+.workspace-leaf:is(.mod-root *):not(.qz-x) {
+  background-color: var(--background-primary);
+}
+
+.view-content:is([data-type="outline"] *):not(.qz-x) {
+  padding-top: var(--size-4-1);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.view-content:is([data-type="outline"] *) {
+  padding-right: var(--size-4-3);
+  padding-bottom: var(--size-4-8);
+  padding-left: var(--size-4-3);
+}
+
+:where(.view-content):where([data-type="outline"] *) {
+  outline-color: rgb(255, 255, 255) !important;
+}
+
+.tappable:where(.workspace-leaf-resize-handle) {
+  position: absolute;
+  float: none;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-width: var(--divider-width);
+  border-top-style: none;
+  border-right-color: var(--divider-color);
+  background-color: rgba(0, 0, 0, 0);
+  transition-property: background-color, border-color, opacity;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+}
+
+.tappable.workspace-leaf-resize-handle:not(.qz-x) {
+  top: auto;
+  right: 0px;
+  bottom: 0px;
+  z-index: var(--layer-status-bar);
+  width: var(--divider-width-hover);
+  height: var(--divider-vertical-height);
+  border-right-style: solid;
+  cursor: col-resize;
+  left: 0px;
+}
+
+:where(.tappable.workspace-leaf-resize-handle):not(qz-x) {
+  border-bottom: var(--divider-color);
+  border-left: var(--divider-color);
+  border-right: var(--divider-color);
+}
+
+.tappable.workspace-leaf-resize-handle {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0px;
+}
+
+:where(.lucide-chevrons-up-down.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-chevrons-up-down:where(.svg-icon):not(qz-x) {
+  width: var(--icon-s);
+  height: var(--icon-s);
+  stroke-width: var(--icon-s-stroke-width);
+}
+
+.lucide-chevrons-up-down.svg-icon {
+  pointer-events: none;
+}
+
+:where(.help.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.help:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+:where(.lucide-settings.svg-icon):not(qz-x) {
+  float: none;
+}
+
+.lucide-settings:where(.svg-icon):not(qz-x) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  opacity: var(--icon-opacity);
+  transition-property: opacity;
+  transition-duration: var(--anim-duration-fast);
+  stroke-width: var(--icon-stroke);
+}
+
+.tappable.workspace-leaf-resize-handle:is(.mod-right-split *) {
+  right: auto;
+  border-left-style: solid;
+}
+
+.tappable:where(.workspace-leaf-resize-handle):where(.mod-root *) {
+  z-index: var(--layer-cover);
+  border-top-width: 0px;
+}
+
+.tappable:where(.workspace-leaf-resize-handle):where(.mod-top *) {
+  z-index: var(--layer-cover);
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0px;
+  border-bottom-color: var(--divider-color);
+}
+
+.tappable.workspace-leaf-resize-handle:is(.mod-top-right-space *) {
+  width: 100%;
+  height: var(--divider-width-hover);
+  cursor: row-resize;
+}
+
+.tappable.workspace-leaf-resize-handle:is(.mod-top-left-space *) {
+  width: 100%;
+  height: var(--divider-width-hover);
+  cursor: row-resize;
+}
+
+.tappable.workspace-leaf-resize-handle:is(.mod-root *) {
+  display: none;
+}
+
+.tappable.workspace-leaf-resize-handle:is(.mod-top *) {
+  display: none;
+  border-bottom-style: solid;
+}
+
+.tappable:where(.workspace-leaf-resize-handle):where(.workspace-leaf *) {
+  border-top-width: 0px;
+}
+
+.tappable:where(.workspace-leaf-resize-handle):where(.mod-right-split *) {
+  border-left-color: var(--divider-color);
+}
+
+.mod-root:where(.mod-vertical.workspace-split) {
+  display: flex;
+  position: relative;
+}
+
+.mod-root.mod-vertical:where(.workspace-split) {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-primary);
+  flex-direction: row;
+}

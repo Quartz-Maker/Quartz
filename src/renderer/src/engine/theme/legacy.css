@@ -1,0 +1,22 @@
+/* Alias layer: the old Quartz variable names used by the still-React UI, mapped onto the
+   theming contract so those components follow theme-dark/theme-light, accents and community
+   themes until they are replaced by engine views. Declared on body, where the semantic
+   variables resolve. Not part of the public theming contract. */
+body {
+  --bg-primary: var(--background-primary);
+  --bg-secondary: var(--background-secondary);
+  --bg-tertiary: var(--background-secondary-alt);
+  --bg-hover: var(--background-modifier-hover);
+  --bg-active: var(--background-modifier-active-hover);
+  --border-color: var(--background-modifier-border);
+  --border-muted: var(--background-modifier-border);
+  --font-mono: var(--font-monospace);
+  --font-size: var(--font-ui-small);
+  --radius: var(--radius-s);
+  --tab-active-bg: var(--background-primary);
+  --tab-inactive-bg: var(--background-secondary);
+  --status-bar-bg: var(--status-bar-background);
+  --statusbar-height: 28px;
+  --tabbar-height: 36px;
+  --sidebar-width: 260px;
+}
